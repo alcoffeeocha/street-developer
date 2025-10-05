@@ -1,0 +1,13 @@
+{
+  "name": "street-developer",
+  "version": "1.0.0",
+  "description": "Turning public street designs or arts into code that runs on web",
+  "main": "index.js",
+  "repository": "https://github.com/alcoffeeocha/street-developer",
+  "author": "Alkahfi",
+  "license": "MIT",
+  "private": false,
+  "workspaces": [
+    "showcase/*"
+  ]
+}
