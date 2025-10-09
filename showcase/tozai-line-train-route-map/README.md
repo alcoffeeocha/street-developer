@@ -23,3 +23,9 @@ https://kahfi.dev/showcase/tozai-line-train-route-map/
   - To get hex color of specific area by using Color Picker Tool with "Sample average" checked
 - Inkscape for recreating SVGs.
 - Copy the Japanese text with Google Translate
+
+## How to Edit
+
+1. Fork the repository.
+2. You can use CLI commands to serve: `yarn start`.
+3. or just double click index.html in file explorer or finder.
