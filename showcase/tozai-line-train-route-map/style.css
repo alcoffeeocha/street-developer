@@ -512,6 +512,39 @@ body {
 .footer {
   padding-left: var(--left-indent);
 }
+
+.full-overlay {
+  position: fixed;
+  inset: 0;
+
+  display: none;
+
+  background-color: var(--color-background);
+}
+
+.full-overlay .textinfo {
+  position: absolute;
+  inset: 0;
+
+  margin: auto;
+  padding-inline: 12px;
+  width: 100%;
+  max-width: 600px;
+  height: 3em;
+
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  body > * {
+    display: none;
+  }
+
+  body > .full-overlay {
+    display: block;
+  }
+}
 /* \ COMPONENTS */
 /* HELPERS */
 ._text-right {
