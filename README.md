@@ -16,4 +16,4 @@ for example:
 - `yarn workspace tozai-line-train-route-map install`
 - then, `yarn workspace tozai-line-train-route-map start`
 
-Though some folders, like above example, can be viewed by just double clicking its `index.html.`
+Though some folders, like above example, can be viewed just by double clicking its `index.html.`
