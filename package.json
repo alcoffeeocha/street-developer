@@ -6,7 +6,7 @@
   "repository": "https://github.com/alcoffeeocha/street-developer",
   "author": "Alkahfi",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "workspaces": [
     "showcase/*"
   ]
