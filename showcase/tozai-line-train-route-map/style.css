@@ -113,10 +113,11 @@ h6 {
   --fs-md: 18px; /* T-01, Estimated time..., JR Line */
   --fs-lg: 20px; /* min */
   --fs-xl: 26px; /* 中野 ゆき */
-  --fs-2xl: 28px; /* 4, lidabashi */
+  --fs-2xl: 28px; /* 4 */
   --fs-3xl: 30px; /* T, 各駅停車, 2 */
   --fs-4xl: 34px; /* 08 */
-  --fs-5xl: 62px; /* 竹 */
+  --fs-5xl: 36px; /* lidabashi */
+  --fs-6xl: 62px; /* 竹 */
 
   --left-indent: 18px;
 }
@@ -195,7 +196,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: end;
-  column-gap: calc(var(--fs-5xl) * 0.8);
+  column-gap: calc(var(--fs-6xl) * 0.8);
   margin-top: -10px;
 
   text-align: center;
@@ -235,7 +236,7 @@ body {
 }
 
 .section-headline > .title {
-  font-size: var(--fs-5xl);
+  font-size: var(--fs-6xl);
   line-height: 1;
   letter-spacing: 1em;
 }
@@ -248,6 +249,7 @@ body {
 
 .main-line {
   --tip-width: 22px;
+  --gap-to-small-line: 24px;
 
   position: relative;
 
@@ -276,7 +278,7 @@ body {
   content: "";
   position: absolute;
   left: -20%;
-  bottom: -26px;
+  bottom: calc(var(--gap-to-small-line) * -1);
 
   width: 100vw;
   height: 1px;
@@ -286,7 +288,7 @@ body {
 .main-line::after {
   content: "";
   position: absolute;
-  bottom: -26px;
+  bottom: calc(var(--gap-to-small-line) * -1);
 
   width: 100%;
   height: 1px;
@@ -343,12 +345,12 @@ body {
 
 .stop-point > .bottomtitle {
   position: absolute;
-  top: calc(100% + 36px);
+  top: calc(100% + 32px);
   left: 90%;
   transform: rotate(90deg);
   transform-origin: top left;
 
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-5xl);
   font-weight: 500;
   line-height: 1;
   letter-spacing: -0.5px;
