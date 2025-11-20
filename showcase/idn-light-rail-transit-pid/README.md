@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# Indonesia Light Rail Transit Passenger Information Display
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(A Work in Progress project)
 
-Currently, two official plugins are available:
+From:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+./raw.mov
 
-## React Compiler
+Into:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+https://kahfi.dev/showcase/idn-light-rail-transit-pid/
 
-## Expanding the ESLint configuration
+## Decisions
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Tools
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Storybook for viewing each screen,
+- React (because I want to use styled-components),
+- styled-components for styling every component,
+- Simple [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) from Josh W Comeau.
+- Following Mark Otto (creator of Bootstrap) [standards](https://codeguide.co/) for the best of us!
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Font
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The original design uses Circular STD typeface / font, with Book, Book Italic, Bold, and Bold Italic variants, which license can be purchased in https://lineto.com/typefaces/circular/. I use DM Sans from Google Fonts instead, which has quite similar style with the original:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Thin ~ DM Sans Light
+Book ~ DM Sans Medium
+Medium ~ DM Sans Semi Bold
+Bold ~ DM Sans Bold
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Approach
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- I use Screen Ruler from Microsoft PowerToys to get the sense of distance between objects.
+- Inkscape for recreating Icons.
+- Minimal use of Gimp software
+  - To rotate some screenshots of the video, so it is easier to work with the Screen Ruler.
+
+## How to Edit
+
+1. Fork the repository.
+2. Install dependencies with `yarn install` or `yarn workspace idn-light-rail-transit-pid install` depends on your CLI working directory location.
+3. Serve the web with `yarn start` or `yarn workspace idn-light-rail-transit-pid start`
+4. Please read ./KAI Commuter Visual Guideline.pdf before making any changes.

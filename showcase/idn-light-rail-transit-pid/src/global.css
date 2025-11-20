@@ -1,0 +1,145 @@
+/* Import this file so the styles can be loaded as early as possible */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* \ End of CSS Reset */
+
+/* Base */
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-LightItalic.ttf");
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-MediumItalic.ttf");
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-SemiBoldItalic.ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DM-Sans/static/DMSans-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+
+:root {
+  font-family: "DMSans", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: var(--text-base);
+}
+
+/* \ End of Base */
