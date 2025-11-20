@@ -24,10 +24,10 @@ https://kahfi.dev/showcase/idn-light-rail-transit-pid/
 
 The original design uses Circular STD typeface / font, with Book, Book Italic, Bold, and Bold Italic variants, which license can be purchased in https://lineto.com/typefaces/circular/. I use DM Sans from Google Fonts instead, which has quite similar style with the original:
 
-Thin ~ DM Sans Light
-Book ~ DM Sans Medium
-Medium ~ DM Sans Semi Bold
-Bold ~ DM Sans Bold
+- Thin ~ DM Sans Light
+- Book ~ DM Sans Medium
+- Medium ~ DM Sans Semi Bold
+- Bold ~ DM Sans Bold
 
 ## Approach
 
