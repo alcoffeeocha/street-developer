@@ -4,7 +4,7 @@
 
 From:
 
-./raw.mov
+./source.mp4
 
 Into:
 
