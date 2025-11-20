@@ -524,14 +524,21 @@ body {
   background-color: var(--color-background);
 }
 
-.full-overlay .textinfo {
+.full-overlay > * {
   position: absolute;
   inset: 0;
 
   margin: auto;
+  max-width: 600px;
+}
+
+.full-overlay.-disclaimer {
+  display: block;
+}
+
+.full-overlay .textinfo {
   padding-inline: 12px;
   width: 100%;
-  max-width: 600px;
   height: 3em;
 
   font-size: 1.125rem;
@@ -543,10 +550,41 @@ body {
     display: none;
   }
 
-  body > .full-overlay {
+  body > .full-overlay.-compatibility {
     display: block;
   }
 }
+
+.modal-disclaimer {
+  max-width: 500px;
+  padding: 16px;
+
+  background: #fff;
+}
+
+.modal-content {
+  font-family: sans-serif;
+  text-align: center;
+
+  border-radius: 8px;
+}
+
+.modal-content > .action {
+  margin-top: 10px;
+
+  text-align: center;
+}
+
+.modal-content > .action button {
+  margin-top: 1rem;
+  padding: 6px 20px;
+
+  color: #fff;
+  background: #2f2f2f;
+  border: none;
+  cursor: pointer;
+}
+
 /* \ COMPONENTS */
 /* HELPERS */
 ._text-right {
@@ -555,5 +593,13 @@ body {
 
 ._text-md {
   font-size: var(--fs-md) !important;
+}
+
+._d-block {
+  display: block !important;
+}
+
+._d-none {
+  display: none !important;
 }
 /* \ HELPERS */

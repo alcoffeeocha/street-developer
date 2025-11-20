@@ -132,8 +132,38 @@
         <p class="text-md">Estimated time required.</p>
       </footer>
     </main>
-    <div class="full-overlay">
+    <div class="full-overlay -compatibility">
       <p class="textinfo">Please use laptop or computer to view. Thank you.</p>
     </div>
+    <div class="full-overlay -disclaimer">
+      <dialog id="dialog-disclaimer" class="modal-disclaimer" open>
+        <div class="modal-content">
+          <h3>⚠️ Unofficial Project</h3>
+          <p>
+            This is a personal project for
+            <strong>educational purposes only</strong>.
+          </p>
+          <p>
+            It is not affiliated with, endorsed by, or connected to Tokyo Metro
+            in any way.
+          </p>
+          <div class="action">
+            <button onclick="closeDisclaimer()">I Understand</button>
+          </div>
+        </div>
+      </dialog>
+    </div>
+    <script>
+      function closeDisclaimer() {
+        const dialogEl = document.getElementById("dialog-disclaimer");
+        if (dialogEl) {
+          dialogEl.close();
+          const wrapper = dialogEl.parentElement;
+          if (wrapper && wrapper.classList.contains("full-overlay")) {
+            wrapper.classList.add("_d-none");
+          }
+        }
+      }
+    </script>
   </body>
 </html>
