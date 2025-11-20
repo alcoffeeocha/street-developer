@@ -21,7 +21,7 @@ Each workspace or showcase can have different tech stack or tools. To serve a sp
 
 for example:
 
-- `yarn workspace tozai-line-train-route-map install`
-- then, `yarn workspace tozai-line-train-route-map start`
+- `yarn workspace idn-light-rail-transit-pid install`
+- then, `yarn workspace idn-light-rail-transit-pid start`
 
-Though some folders, like above showcase, can be viewed just by double clicking its `index.html.`.
+Though some folders, can be viewed just by double clicking its `index.html.`.
