@@ -1,0 +1,15 @@
+{
+  "name": "fictional-train-route-in-japan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/alcoffeeocha/street-developer/tree/master/showcase/fictional-train-route-in-japan",
+  "author": "Alkahfi",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server --port=5500",
+    "dev": "yarn start"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
